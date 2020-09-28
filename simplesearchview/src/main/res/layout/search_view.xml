@@ -12,7 +12,7 @@
         android:background="@android:color/white"
         tools:layout_height="?android:attr/actionBarSize">
 
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/searchEditText"
             android:layout_width="0dp"
             android:layout_height="match_parent"

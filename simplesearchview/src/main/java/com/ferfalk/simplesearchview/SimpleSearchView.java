@@ -30,6 +30,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.view.inputmethod.EditorInfo;
+import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
@@ -80,7 +81,7 @@ public class SimpleSearchView extends FrameLayout {
     private int style = STYLE_BAR;
 
     private ViewGroup searchContainer;
-    private EditText searchEditText;
+    private AutoCompleteTextView searchEditText;
     private ImageButton backButton;
     private ImageButton clearButton;
     private ImageButton voiceButton;
@@ -710,7 +711,7 @@ public class SimpleSearchView extends FrameLayout {
     /**
      * @return EditText view that contains the search query, can be used with hooks like RxBinding
      */
-    public EditText getSearchEditText() {
+    public AutoCompleteTextView getSearchEditText() {
         return searchEditText;
     }
 
